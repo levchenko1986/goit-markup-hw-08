@@ -1,0 +1,124 @@
+
+
+
+/* ------HEADER------ */
+
+
+/* ------HERO------ */
+
+/* ------BUTTON------ */
+.btn-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.btn-box:not(:last-child) {
+    margin-right: 8px;
+}
+.btn-chapters {
+    padding: 6px 22px 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 0;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 4px;
+    transition: 0.1s linear;
+    transition: color 250ms var(--time-cubic), 
+    background-color 250ms var(--time-cubic),
+    box-shadow 250ms var(--time-cubic);
+}
+
+/* ------QUALITY SECTION------ */
+
+/* ------DIRECTIONS SECTION------ */
+
+/* ------SPECIALISTS SECTION------ */
+
+
+/* ------PROJECTS SECTION------ */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    padding: 0;
+    margin-bottom: 0;
+}
+.projects-box {
+    position: relative;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 30px * 3) / 3);
+}
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+.projects-box:nth-last-child(-n+3) {
+    margin-bottom: 0;   
+}
+.projects-image-wrap {
+    position: relative;
+    overflow: hidden;
+}
+.projects-image-wrap-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 101%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: #fff;
+    padding: 63px 24px;
+    transform: translateY(100%);
+    transition: transform 250ms var(--time-cubic);
+}
+.project-link:hover .projects-image-wrap-info,
+.project-link:focus .projects-image-wrap-info {
+    top: 0;
+    transform: translateY(0);
+}
+.project-box-border {
+    padding: 20px 24px;
+    border-top: none;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    transition: transform 250ms var(--time-cubic)
+}
+.project-box-shadow:hover, .project-box-shadow:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.projects-sublitle {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.projects-text {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--text-grey);
+}
+
+/* ------FOOTER------ */
+
+
+
+
+
+/* ------MODAL------ */
+
+

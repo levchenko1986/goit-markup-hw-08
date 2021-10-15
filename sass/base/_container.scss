@@ -1,0 +1,98 @@
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.mobile-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 480px;
+  background-color: #FFFFFF;
+  z-index: 1;
+  max-height: 796px;
+  overflow-y: scroll;
+  transform: translateY(-100%);
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+  transition: transform 500ms linear;
+}
+
+// 480+
+@media screen and (max-width: 480px) {
+    .container {
+      max-width: 480px;
+      max-height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+    }
+  
+  
+  
+  // 768+
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 768px;
+    }
+  }
+  
+//   // 1200+
+//   @media screen and (min-width: 1200px) {
+//     .container {
+//       width: 1200px;
+//     }
+//   }
+
+  @media screen and (max-width: 480px) {
+    .menu {
+      display: none;
+    }
+  
+    .tel-link {
+      display: none;
+    }
+  
+
+    .header-modal-btn {
+      display: none;
+    }
+    .open-menu-btn,
+    .mobile-menu-close-btn {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      line-height: 0;
+    }
+  
+    .mobile-menu-close-btn {
+      position: absolute;
+      top: 21px;
+      right: 25px;
+    }
+
+    .mobile-menu.is-open {
+      transform: translateY(0%);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  
+    .mobile-menu-container {
+      position: relative;
+      padding-top: 48px;
+      padding-bottom: 48px;
+      padding-left: 40px;
+
+    }
+    .mobile-menu-close-icon {
+      &:hover,
+      &:focus {
+        fill: var(--logo-color);
+      }
+    }
+  }
+  
