@@ -1,4 +1,5 @@
 footer {
+    position: absolute;
     display: block;
     background: var(--background-grey);
     padding: 60px 0 60px 0;
@@ -147,6 +148,11 @@ address {
     top: 13px;
     right: 28px;
 }
+@media screen and (min-width: 1200px) {
+    footer {
+        position: static;
+    }
+}
 @media screen and (max-width: 768px) {
     .footer-container {
         display: block;
@@ -175,6 +181,8 @@ address {
         padding-top: 60px;
     }
 }
+
+
 @media screen and (max-width: 480px) {
     .footer-container {
         display: block;
@@ -213,4 +221,3 @@ address {
         margin-bottom: 20px;
     }
 }
-

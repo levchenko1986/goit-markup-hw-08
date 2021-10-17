@@ -77,14 +77,15 @@
 //     height: auto;
 
 // }
-@media screen and (max-width: 480px) {
-    .specialists-box {
-        display: block;
-    }
 
-}
 @media screen and (max-width: 768px){
     .specialists-img {
         flex-basis: calc((100% - 60px) / 2);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .specialists-box {
+        display: block;
     }
 }
