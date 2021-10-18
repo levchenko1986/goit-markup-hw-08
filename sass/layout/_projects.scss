@@ -33,6 +33,9 @@
 }
 
 .project-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-decoration: none;
     color: inherit;
 
@@ -68,6 +71,7 @@
 }
 
 .project-box-border {
+    flex-grow: 1;
     padding: 20px 24px;
     border-top: none;
     border-right: 1px solid #EEEEEE;
